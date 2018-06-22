@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5813C83620DDB67300EF70A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6FE391C1B662700FC16A9 /* Info.plist */; };
 		7CB6FE251C1B662700FC16A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE241C1B662700FC16A9 /* main.m */; };
 		7CB6FE281C1B662700FC16A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE271C1B662700FC16A9 /* AppDelegate.m */; };
 		7CB6FE2B1C1B662700FC16A9 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE2A1C1B662700FC16A9 /* GameScene.m */; };
@@ -15,6 +16,24 @@
 		7CB6FE331C1B662700FC16A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6FE311C1B662700FC16A9 /* Main.storyboard */; };
 		7CB6FE351C1B662700FC16A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6FE341C1B662700FC16A9 /* Assets.xcassets */; };
 		7CB6FE381C1B662700FC16A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6FE361C1B662700FC16A9 /* LaunchScreen.storyboard */; };
+		7CDB83A61D9D35E000A8026A /* myMagicParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB83A51D9D35E000A8026A /* myMagicParticle.sks */; };
+		7CDB83A81D9DC21700A8026A /* RandomFireyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CDB83A71D9DC21700A8026A /* RandomFireyButton.png */; };
+		7CFAE1AB1D9158160063FD3A /* 200px-psychedelic-spiral-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1AA1D9158160063FD3A /* 200px-psychedelic-spiral-background.png */; };
+		7CFAE1AD1D915F340063FD3A /* alphabet.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1AC1D915F340063FD3A /* alphabet.png */; };
+		7CFAE1AF1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1AE1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png */; };
+		7CFAE1B11D91EA8C0063FD3A /* balloons.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1B01D91EA8C0063FD3A /* balloons.png */; };
+		7CFAE1B51D9218810063FD3A /* myFirefliesParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1B41D9218810063FD3A /* myFirefliesParticle.sks */; };
+		7CFAE1B71D9218E20063FD3A /* myFireyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1B61D9218E20063FD3A /* myFireyParticle.sks */; };
+		7CFAE1B91D92AADA0063FD3A /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1B81D92AADA0063FD3A /* spark.png */; };
+		7CFAE1BB1D93320E0063FD3A /* transparent-new-osprey.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1BA1D93320E0063FD3A /* transparent-new-osprey.png */; };
+		7CFAE1BF1D940CA80063FD3A /* fireflies button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1BC1D940CA80063FD3A /* fireflies button.png */; };
+		7CFAE1C01D940CA80063FD3A /* firey button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1BD1D940CA80063FD3A /* firey button.png */; };
+		7CFAE1C11D940CA80063FD3A /* spirograph button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1BE1D940CA80063FD3A /* spirograph button.png */; };
+		7CFAE1C51D940CCE0063FD3A /* balloons button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1C21D940CCE0063FD3A /* balloons button.png */; };
+		7CFAE1C61D940CCE0063FD3A /* cake button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1C31D940CCE0063FD3A /* cake button.png */; };
+		7CFAE1C71D940CCE0063FD3A /* osprey button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1C41D940CCE0063FD3A /* osprey button.png */; };
+		7CFAE1C91D940D700063FD3A /* psychedelic spiral button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1C81D940D700063FD3A /* psychedelic spiral button.png */; };
+		7CFAE1CB1D940DE00063FD3A /* alphabet button.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CFAE1CA1D940DE00063FD3A /* alphabet button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +50,24 @@
 		7CB6FE341C1B662700FC16A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB6FE371C1B662700FC16A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CB6FE391C1B662700FC16A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDB83A51D9D35E000A8026A /* myMagicParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = myMagicParticle.sks; sourceTree = "<group>"; };
+		7CDB83A71D9DC21700A8026A /* RandomFireyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomFireyButton.png; sourceTree = "<group>"; };
+		7CFAE1AA1D9158160063FD3A /* 200px-psychedelic-spiral-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200px-psychedelic-spiral-background.png"; sourceTree = "<group>"; };
+		7CFAE1AC1D915F340063FD3A /* alphabet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphabet.png; sourceTree = "<group>"; };
+		7CFAE1AE1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiered-cake-fondant-roses-top-view.png"; sourceTree = "<group>"; };
+		7CFAE1B01D91EA8C0063FD3A /* balloons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloons.png; sourceTree = "<group>"; };
+		7CFAE1B41D9218810063FD3A /* myFirefliesParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = myFirefliesParticle.sks; sourceTree = "<group>"; };
+		7CFAE1B61D9218E20063FD3A /* myFireyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = myFireyParticle.sks; sourceTree = "<group>"; };
+		7CFAE1B81D92AADA0063FD3A /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		7CFAE1BA1D93320E0063FD3A /* transparent-new-osprey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-new-osprey.png"; sourceTree = "<group>"; };
+		7CFAE1BC1D940CA80063FD3A /* fireflies button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fireflies button.png"; sourceTree = "<group>"; };
+		7CFAE1BD1D940CA80063FD3A /* firey button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firey button.png"; sourceTree = "<group>"; };
+		7CFAE1BE1D940CA80063FD3A /* spirograph button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spirograph button.png"; sourceTree = "<group>"; };
+		7CFAE1C21D940CCE0063FD3A /* balloons button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloons button.png"; sourceTree = "<group>"; };
+		7CFAE1C31D940CCE0063FD3A /* cake button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cake button.png"; sourceTree = "<group>"; };
+		7CFAE1C41D940CCE0063FD3A /* osprey button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "osprey button.png"; sourceTree = "<group>"; };
+		7CFAE1C81D940D700063FD3A /* psychedelic spiral button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "psychedelic spiral button.png"; sourceTree = "<group>"; };
+		7CFAE1CA1D940DE00063FD3A /* alphabet button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alphabet button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +104,7 @@
 				7CB6FE271C1B662700FC16A9 /* AppDelegate.m */,
 				7CB6FE291C1B662700FC16A9 /* GameScene.h */,
 				7CB6FE2A1C1B662700FC16A9 /* GameScene.m */,
+				7CDB83A51D9D35E000A8026A /* myMagicParticle.sks */,
 				7CB6FE2C1C1B662700FC16A9 /* GameScene.sks */,
 				7CB6FE2E1C1B662700FC16A9 /* GameViewController.h */,
 				7CB6FE2F1C1B662700FC16A9 /* GameViewController.m */,
@@ -82,7 +120,24 @@
 		7CB6FE231C1B662700FC16A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7CFAE1CA1D940DE00063FD3A /* alphabet button.png */,
+				7CFAE1C21D940CCE0063FD3A /* balloons button.png */,
+				7CFAE1C81D940D700063FD3A /* psychedelic spiral button.png */,
+				7CFAE1C31D940CCE0063FD3A /* cake button.png */,
+				7CDB83A71D9DC21700A8026A /* RandomFireyButton.png */,
+				7CFAE1C41D940CCE0063FD3A /* osprey button.png */,
+				7CFAE1BC1D940CA80063FD3A /* fireflies button.png */,
+				7CFAE1BD1D940CA80063FD3A /* firey button.png */,
+				7CFAE1BE1D940CA80063FD3A /* spirograph button.png */,
 				7CB6FE241C1B662700FC16A9 /* main.m */,
+				7CFAE1B81D92AADA0063FD3A /* spark.png */,
+				7CFAE1BA1D93320E0063FD3A /* transparent-new-osprey.png */,
+				7CFAE1B61D9218E20063FD3A /* myFireyParticle.sks */,
+				7CFAE1B41D9218810063FD3A /* myFirefliesParticle.sks */,
+				7CFAE1B01D91EA8C0063FD3A /* balloons.png */,
+				7CFAE1AC1D915F340063FD3A /* alphabet.png */,
+				7CFAE1AE1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png */,
+				7CFAE1AA1D9158160063FD3A /* 200px-psychedelic-spiral-background.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,11 +168,12 @@
 		7CB6FE181C1B662700FC16A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Robert Zimmelman";
 				TargetAttributes = {
 					7CB6FE1F1C1B662700FC16A9 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8RV36K5JJ4;
 					};
 				};
 			};
@@ -145,9 +201,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB6FE2D1C1B662700FC16A9 /* GameScene.sks in Resources */,
+				7CFAE1BB1D93320E0063FD3A /* transparent-new-osprey.png in Resources */,
+				7CFAE1C01D940CA80063FD3A /* firey button.png in Resources */,
+				7CFAE1B91D92AADA0063FD3A /* spark.png in Resources */,
+				7CFAE1B11D91EA8C0063FD3A /* balloons.png in Resources */,
 				7CB6FE381C1B662700FC16A9 /* LaunchScreen.storyboard in Resources */,
+				7CFAE1BF1D940CA80063FD3A /* fireflies button.png in Resources */,
+				7CFAE1C61D940CCE0063FD3A /* cake button.png in Resources */,
+				7CDB83A81D9DC21700A8026A /* RandomFireyButton.png in Resources */,
+				7CDB83A61D9D35E000A8026A /* myMagicParticle.sks in Resources */,
+				5813C83620DDB67300EF70A8 /* Info.plist in Resources */,
+				7CFAE1C11D940CA80063FD3A /* spirograph button.png in Resources */,
+				7CFAE1B51D9218810063FD3A /* myFirefliesParticle.sks in Resources */,
+				7CFAE1AF1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png in Resources */,
 				7CB6FE351C1B662700FC16A9 /* Assets.xcassets in Resources */,
+				7CFAE1B71D9218E20063FD3A /* myFireyParticle.sks in Resources */,
+				7CFAE1C51D940CCE0063FD3A /* balloons button.png in Resources */,
+				7CFAE1C71D940CCE0063FD3A /* osprey button.png in Resources */,
 				7CB6FE331C1B662700FC16A9 /* Main.storyboard in Resources */,
+				7CFAE1AD1D915F340063FD3A /* alphabet.png in Resources */,
+				7CFAE1AB1D9158160063FD3A /* 200px-psychedelic-spiral-background.png in Resources */,
+				7CFAE1C91D940D700063FD3A /* psychedelic spiral button.png in Resources */,
+				7CFAE1CB1D940DE00063FD3A /* alphabet button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,13 +270,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -239,13 +324,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -273,9 +368,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RV36K5JJ4;
 				INFOPLIST_FILE = rzSpriteKaleidoscope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.rzSpriteKaleidoscope;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.paintwithshapes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -284,9 +381,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RV36K5JJ4;
 				INFOPLIST_FILE = rzSpriteKaleidoscope/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.rzSpriteKaleidoscope;
+				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.paintwithshapes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -310,6 +409,7 @@
 				7CB6FE3E1C1B662700FC16A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,25 +1,211 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8118" systemVersion="15A172" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8098"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-nI-wj7" userLabel="Recording Stack View">
+                                <rect key="frame" x="125" y="54" width="125" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u2-Nx-xOg">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="myRecordButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="lkw-bm-rff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUS-Lz-ONO">
+                                        <rect key="frame" x="59" y="0.0" width="70" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Recording">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD1-Bv-LSd">
+                                        <rect key="frame" x="139" y="0.0" width="32" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="myStopButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0vO-OG-exX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAt-ba-MYM">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="30"/>
+                                        <state key="normal" title="Take Picture"/>
+                                        <connections>
+                                            <action selector="myTakePictureButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="fAu-V0-Ilw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufj-Lu-bDl">
+                                        <rect key="frame" x="95" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Quit"/>
+                                        <connections>
+                                            <action selector="myQuitButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gCL-Z1-aTC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="3u2-Nx-xOg"/>
+                                        <exclude reference="sUS-Lz-ONO"/>
+                                        <exclude reference="WD1-Bv-LSd"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="8888" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Screen to Select Shape to Paint With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-Vp-5aX">
+                                <rect key="frame" x="49" y="751" width="277" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" tag="9999" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="45a-4h-OSe" userLabel="Shape Selection Stack View">
+                                <rect key="frame" x="155.66666666666666" y="100" width="63.666666666666657" height="612"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpz-97-iiq" userLabel="Spirograph">
+                                        <rect key="frame" x="0.0" y="0.0" width="63.666666666666664" height="63.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Mpz-97-iiq" secondAttribute="height" multiplier="25:25" id="r7J-dR-R5v"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="spirograph button.png"/>
+                                        <connections>
+                                            <action selector="mySpirographPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zmg-Fk-UdR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-DY-D7r" userLabel="Psychadelic Spiral">
+                                        <rect key="frame" x="0.0" y="73.333333333333343" width="63.666666666666664" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="A1o-DY-D7r" secondAttribute="height" multiplier="100:81" id="GFZ-7x-Hon"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="psychedelic spiral button.png"/>
+                                        <connections>
+                                            <action selector="mySpiralPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="qHd-00-MeZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVM-PP-cf5" userLabel="Alphabet">
+                                        <rect key="frame" x="0.0" y="134.33333333333334" width="63.666666666666664" height="41.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rVM-PP-cf5" secondAttribute="height" multiplier="50:33" id="yTf-yc-ec3"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="alphabet button.png"/>
+                                        <connections>
+                                            <action selector="myAlphabetPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iA9-DG-9nn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-zO-dlb" userLabel="Cake">
+                                        <rect key="frame" x="0.0" y="186" width="63.666666666666664" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5eX-zO-dlb" secondAttribute="height" multiplier="20:19" id="yaE-5d-CKt"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="cake button.png"/>
+                                        <connections>
+                                            <action selector="myCakePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TRN-EQ-fNI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY4-cH-R5y" userLabel="Balloon">
+                                        <rect key="frame" x="0.0" y="256" width="63.666666666666664" height="63.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OY4-cH-R5y" secondAttribute="height" multiplier="1:1" id="BgA-Iy-Xe8"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="balloons button.png"/>
+                                        <connections>
+                                            <action selector="myBalloonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sHo-V5-eZu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-aZ-5Zm" userLabel="Osprey">
+                                        <rect key="frame" x="0.0" y="329.33333333333331" width="63.666666666666664" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dpA-aZ-5Zm" secondAttribute="height" multiplier="1:1" id="oSz-dB-LyS"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="osprey button.png"/>
+                                        <connections>
+                                            <action selector="myOspreyPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="pSS-Wy-oy3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v73-fp-dZh" userLabel="Firey">
+                                        <rect key="frame" x="0.0" y="402.33333333333331" width="63.666666666666664" height="63.333333333333314"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="v73-fp-dZh" secondAttribute="height" multiplier="1:1" id="3Uo-1c-tPh"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="firey button.png"/>
+                                        <connections>
+                                            <action selector="myFireyPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xqH-9N-V02"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xX-V8-PGd" userLabel="RandomFirey">
+                                        <rect key="frame" x="0.0" y="475.66666666666663" width="63.666666666666664" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1xX-V8-PGd" secondAttribute="height" multiplier="1:1" id="tVt-i3-nmg"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="RandomFireyButton.png"/>
+                                        <connections>
+                                            <action selector="myRandomFireyPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="rGG-qq-jyD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-mK-Xdq" userLabel="Fireflies">
+                                        <rect key="frame" x="0.0" y="548.66666666666663" width="63.666666666666664" height="63.333333333333371"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="B8j-mK-Xdq" secondAttribute="height" multiplier="1:1" id="NAR-DX-fNT"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="fireflies button.png"/>
+                                        <connections>
+                                            <action selector="myFirefliesPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0YX-GR-sez"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dYq-Vp-5aX" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="9Qn-ac-rHb"/>
+                            <constraint firstItem="Cd6-nI-wj7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="HLO-1v-5xw"/>
+                            <constraint firstItem="Cd6-nI-wj7" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="10" id="OH6-zo-vf4"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="dYq-Vp-5aX" secondAttribute="bottom" constant="10" id="RPR-0B-5wb"/>
+                            <constraint firstAttribute="bottom" secondItem="45a-4h-OSe" secondAttribute="bottom" constant="100" id="bc9-Zd-wqf"/>
+                            <constraint firstItem="45a-4h-OSe" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="dFp-Td-YbI"/>
+                            <constraint firstItem="45a-4h-OSe" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="100" id="f2C-VH-p5W"/>
+                            <constraint firstItem="45a-4h-OSe" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="gtG-0J-Ten"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myQuitButton" destination="Ufj-Lu-bDl" id="OiQ-T2-ZPd"/>
+                        <outlet property="myRecordButton" destination="3u2-Nx-xOg" id="CMy-bb-H3b"/>
+                        <outlet property="myRecordingIndicator" destination="sUS-Lz-ONO" id="cMl-oi-ag7"/>
+                        <outlet property="myStopButton" destination="WD1-Bv-LSd" id="A8d-vt-nnD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RandomFireyButton.png" width="200" height="200"/>
+        <image name="alphabet button.png" width="100" height="66"/>
+        <image name="balloons button.png" width="100" height="100"/>
+        <image name="cake button.png" width="100" height="95"/>
+        <image name="fireflies button.png" width="100" height="100"/>
+        <image name="firey button.png" width="100" height="100"/>
+        <image name="osprey button.png" width="70" height="100"/>
+        <image name="psychedelic spiral button.png" width="100" height="81"/>
+        <image name="spirograph button.png" width="100" height="100"/>
+    </resources>
 </document>

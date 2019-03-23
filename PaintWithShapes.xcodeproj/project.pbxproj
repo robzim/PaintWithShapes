@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5813C83620DDB67300EF70A8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CB6FE391C1B662700FC16A9 /* Info.plist */; };
+		58005EFA2245B3B600EF1E5F /* new-firetruck.png in Resources */ = {isa = PBXBuildFile; fileRef = 58005EF92245B3B600EF1E5F /* new-firetruck.png */; };
+		588DB6A822466E530025088B /* spirograph.png in Resources */ = {isa = PBXBuildFile; fileRef = 588DB6A722466E530025088B /* spirograph.png */; };
+		589E8DCD21639012004D6192 /* myImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E8DCC21639012004D6192 /* myImageSelector.swift */; };
 		7CB6FE251C1B662700FC16A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE241C1B662700FC16A9 /* main.m */; };
 		7CB6FE281C1B662700FC16A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE271C1B662700FC16A9 /* AppDelegate.m */; };
 		7CB6FE2B1C1B662700FC16A9 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE2A1C1B662700FC16A9 /* GameScene.m */; };
@@ -37,7 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7CB6FE201C1B662700FC16A9 /* rzSpriteKaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rzSpriteKaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58005EF92245B3B600EF1E5F /* new-firetruck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new-firetruck.png"; sourceTree = "<group>"; };
+		588DB6A722466E530025088B /* spirograph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spirograph.png; sourceTree = "<group>"; };
+		589E8DCB21639012004D6192 /* rzSpriteKaleidoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rzSpriteKaleidoscope-Bridging-Header.h"; sourceTree = "<group>"; };
+		589E8DCC21639012004D6192 /* myImageSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myImageSelector.swift; sourceTree = "<group>"; };
+		7CB6FE201C1B662700FC16A9 /* PaintWithShapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintWithShapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB6FE241C1B662700FC16A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CB6FE261C1B662700FC16A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CB6FE271C1B662700FC16A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,20 +90,22 @@
 		7CB6FE171C1B662700FC16A9 = {
 			isa = PBXGroup;
 			children = (
-				7CB6FE221C1B662700FC16A9 /* rzSpriteKaleidoscope */,
+				589E8DCC21639012004D6192 /* myImageSelector.swift */,
+				7CB6FE221C1B662700FC16A9 /* rzPaintWithShapes */,
 				7CB6FE211C1B662700FC16A9 /* Products */,
+				589E8DCB21639012004D6192 /* rzSpriteKaleidoscope-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
 		7CB6FE211C1B662700FC16A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7CB6FE201C1B662700FC16A9 /* rzSpriteKaleidoscope.app */,
+				7CB6FE201C1B662700FC16A9 /* PaintWithShapes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7CB6FE221C1B662700FC16A9 /* rzSpriteKaleidoscope */ = {
+		7CB6FE221C1B662700FC16A9 /* rzPaintWithShapes */ = {
 			isa = PBXGroup;
 			children = (
 				7CB6FE261C1B662700FC16A9 /* AppDelegate.h */,
@@ -114,12 +122,14 @@
 				7CB6FE391C1B662700FC16A9 /* Info.plist */,
 				7CB6FE231C1B662700FC16A9 /* Supporting Files */,
 			);
-			path = rzSpriteKaleidoscope;
+			path = rzPaintWithShapes;
 			sourceTree = "<group>";
 		};
 		7CB6FE231C1B662700FC16A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				588DB6A722466E530025088B /* spirograph.png */,
+				58005EF92245B3B600EF1E5F /* new-firetruck.png */,
 				7CFAE1CA1D940DE00063FD3A /* alphabet button.png */,
 				7CFAE1C21D940CCE0063FD3A /* balloons button.png */,
 				7CFAE1C81D940D700063FD3A /* psychedelic spiral button.png */,
@@ -145,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7CB6FE1F1C1B662700FC16A9 /* rzSpriteKaleidoscope */ = {
+		7CB6FE1F1C1B662700FC16A9 /* PaintWithShapes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7CB6FE3C1C1B662700FC16A9 /* Build configuration list for PBXNativeTarget "rzSpriteKaleidoscope" */;
+			buildConfigurationList = 7CB6FE3C1C1B662700FC16A9 /* Build configuration list for PBXNativeTarget "PaintWithShapes" */;
 			buildPhases = (
 				7CB6FE1C1C1B662700FC16A9 /* Sources */,
 				7CB6FE1D1C1B662700FC16A9 /* Frameworks */,
@@ -157,9 +167,9 @@
 			);
 			dependencies = (
 			);
-			name = rzSpriteKaleidoscope;
+			name = PaintWithShapes;
 			productName = rzSpriteKaleidoscope;
-			productReference = 7CB6FE201C1B662700FC16A9 /* rzSpriteKaleidoscope.app */;
+			productReference = 7CB6FE201C1B662700FC16A9 /* PaintWithShapes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,16 +178,17 @@
 		7CB6FE181C1B662700FC16A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Robert Zimmelman";
 				TargetAttributes = {
 					7CB6FE1F1C1B662700FC16A9 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8RV36K5JJ4;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
-			buildConfigurationList = 7CB6FE1B1C1B662700FC16A9 /* Build configuration list for PBXProject "rzSpriteKaleidoscope" */;
+			buildConfigurationList = 7CB6FE1B1C1B662700FC16A9 /* Build configuration list for PBXProject "PaintWithShapes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -190,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7CB6FE1F1C1B662700FC16A9 /* rzSpriteKaleidoscope */,
+				7CB6FE1F1C1B662700FC16A9 /* PaintWithShapes */,
 			);
 		};
 /* End PBXProject section */
@@ -200,17 +211,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588DB6A822466E530025088B /* spirograph.png in Resources */,
 				7CB6FE2D1C1B662700FC16A9 /* GameScene.sks in Resources */,
 				7CFAE1BB1D93320E0063FD3A /* transparent-new-osprey.png in Resources */,
 				7CFAE1C01D940CA80063FD3A /* firey button.png in Resources */,
 				7CFAE1B91D92AADA0063FD3A /* spark.png in Resources */,
 				7CFAE1B11D91EA8C0063FD3A /* balloons.png in Resources */,
+				58005EFA2245B3B600EF1E5F /* new-firetruck.png in Resources */,
 				7CB6FE381C1B662700FC16A9 /* LaunchScreen.storyboard in Resources */,
 				7CFAE1BF1D940CA80063FD3A /* fireflies button.png in Resources */,
 				7CFAE1C61D940CCE0063FD3A /* cake button.png in Resources */,
 				7CDB83A81D9DC21700A8026A /* RandomFireyButton.png in Resources */,
 				7CDB83A61D9D35E000A8026A /* myMagicParticle.sks in Resources */,
-				5813C83620DDB67300EF70A8 /* Info.plist in Resources */,
 				7CFAE1C11D940CA80063FD3A /* spirograph button.png in Resources */,
 				7CFAE1B51D9218810063FD3A /* myFirefliesParticle.sks in Resources */,
 				7CFAE1AF1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png in Resources */,
@@ -233,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589E8DCD21639012004D6192 /* myImageSelector.swift in Sources */,
 				7CB6FE301C1B662700FC16A9 /* GameViewController.m in Sources */,
 				7CB6FE281C1B662700FC16A9 /* AppDelegate.m in Sources */,
 				7CB6FE2B1C1B662700FC16A9 /* GameScene.m in Sources */,
@@ -359,6 +372,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -368,12 +382,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8RV36K5JJ4;
-				INFOPLIST_FILE = rzSpriteKaleidoscope/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/rzPaintWithShapes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.paintwithshapes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rzSpriteKaleidoscope-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -381,19 +399,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8RV36K5JJ4;
-				INFOPLIST_FILE = rzSpriteKaleidoscope/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/rzPaintWithShapes/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.paintwithshapes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rzSpriteKaleidoscope-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7CB6FE1B1C1B662700FC16A9 /* Build configuration list for PBXProject "rzSpriteKaleidoscope" */ = {
+		7CB6FE1B1C1B662700FC16A9 /* Build configuration list for PBXProject "PaintWithShapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CB6FE3A1C1B662700FC16A9 /* Debug */,
@@ -402,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7CB6FE3C1C1B662700FC16A9 /* Build configuration list for PBXNativeTarget "rzSpriteKaleidoscope" */ = {
+		7CB6FE3C1C1B662700FC16A9 /* Build configuration list for PBXNativeTarget "PaintWithShapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7CB6FE3D1C1B662700FC16A9 /* Debug */,

@@ -11,15 +11,9 @@
 @implementation GameScene
 @synthesize mySquareShape;
 @synthesize myShapeType;
-@synthesize mySpiralShapeNode;
-@synthesize myAlphabetNode;
-@synthesize myCakeNode;
-@synthesize myBaloonNode;
-@synthesize myOspreyNode;
-@synthesize myFireyParticle;
-@synthesize myRandomFireyParticle;
-@synthesize myFirefliesParticle;
-@synthesize myMagicParticle;
+@synthesize mySpiralShapeNode, myAlphabetNode, myCakeNode, myBaloonNode, myOspreyNode, myEgretNode, myFlagNode;
+@synthesize myAirplaneNode, myAmbulanceNode, myFiretruckNode, mySpirographNode;
+@synthesize myFireyParticle, myRandomFireyParticle, myFirefliesParticle, myMagicParticle;
 @synthesize myShapeSelectionStackView;
 @synthesize myShapeNumber;
 @synthesize myInstructionsLabel;
@@ -72,6 +66,12 @@
     myCakeNode = [self childNodeWithName:@"myCake"];
     myBaloonNode = [self childNodeWithName:@"myBaloons"];
     myOspreyNode = [self childNodeWithName:@"myOsprey"];
+    myEgretNode = [self childNodeWithName:@"myEgret"];
+    myFlagNode = [self childNodeWithName:@"myFlag"];
+    myFiretruckNode = [self childNodeWithName:@"myFiretruck"];
+    myAirplaneNode = [self childNodeWithName:@"myAirplane"];
+    myAmbulanceNode = [self childNodeWithName:@"myAmbulance"];
+    mySpirographNode = [self childNodeWithName:@"mySpirograph"];
     myShapeSelectionStackView = [self.view viewWithTag:9999];
     myInstructionsLabel = [self.view viewWithTag:8888];
     [myShapeSelectionStackView setHidden:YES];
@@ -262,6 +262,40 @@
     //                                                ]]];
 }
 
+-(void)myMakeShapeIndicator: (SKNode *) theNode {
+    SKNode *myIndicatorNode = [theNode copy];
+    double myMidX = self.scene.size.width / 2.0;
+    double myMidY = self.scene.size.height / 2.0;
+    [myIndicatorNode setPosition:CGPointMake(myMidX, myMidY)];
+    [self addChild:myIndicatorNode];
+    [myIndicatorNode runAction:[SKAction sequence:@[
+                                                    [SKAction waitForDuration:1.0],
+                                                    [SKAction scaleTo:0.1 duration:1.0],
+                                                    [SKAction waitForDuration:0.1],
+                                                    [SKAction removeFromParent],
+                                                    ]]];
+}
+
+
+
+-(void)myMakeNodeTrail: (SKNode *) theNode : (CGPoint) atLocation {
+    SKNode *myTrailNode = [theNode copy];
+    [myTrailNode setPosition:atLocation];
+    float myRandomScale = arc4random()%3;
+    myRandomScale = myRandomScale / 10.0;
+    [myTrailNode setScale:myRandomScale];
+    [self addChild:myTrailNode];
+    [myTrailNode runAction:[SKAction group:@[
+                                             [SKAction rotateByAngle:M_PI*-1.0 duration:11.0],
+                                             [SKAction sequence:@[
+                                                                  [SKAction waitForDuration:0.1],
+                                                                  [SKAction scaleTo:0.2 duration:0.5],
+                                                                  [SKAction waitForDuration:9.9],
+                                                                  [SKAction scaleTo:0.01 duration:0.1],
+                                                                  [SKAction removeFromParent],
+                                                                  ]],]]];
+}
+
 
 
 -(void)myMakeCakeTrail: (CGPoint) atLocation {
@@ -323,6 +357,45 @@
                                                   ]];
     
     [myTrailNode runAction:myBaloonsAction];
+}
+
+-(void)myMakeEgretsTrail: (CGPoint) atLocation {
+    SKNode *myTrailNode = [myEgretNode copy];
+    [myTrailNode setPosition:atLocation];
+    float myRandomScale = arc4random()%3;
+    myRandomScale = myRandomScale / 10.0;
+    [myTrailNode setScale:myRandomScale];
+    [self addChild:myTrailNode];
+    [myTrailNode runAction:[SKAction group:@[
+                                             [SKAction rotateByAngle:M_PI*-1.0 duration:11.0],
+                                             [SKAction sequence:@[
+                                                                  [SKAction waitForDuration:0.1],
+                                                                  [SKAction scaleTo:0.5 duration:0.5],
+                                                                  [SKAction waitForDuration:9.9],
+                                                                  [SKAction scaleTo:0.01 duration:0.1],
+                                                                  [SKAction removeFromParent],
+                                                                  ]],]]];
+    
+}
+
+
+-(void)myMakeFlagTrail: (CGPoint) atLocation {
+    SKNode *myTrailNode = [myFlagNode copy];
+    [myTrailNode setPosition:atLocation];
+    float myRandomScale = arc4random()%3;
+    myRandomScale = myRandomScale / 10.0;
+    [myTrailNode setScale:myRandomScale];
+    [self addChild:myTrailNode];
+    [myTrailNode runAction:[SKAction group:@[
+                                             [SKAction rotateByAngle:M_PI*-1.0 duration:11.0],
+                                             [SKAction sequence:@[
+                                                                  [SKAction waitForDuration:0.1],
+                                                                  [SKAction scaleTo:0.5 duration:0.5],
+                                                                  [SKAction waitForDuration:9.9],
+                                                                  [SKAction scaleTo:0.01 duration:0.1],
+                                                                  [SKAction removeFromParent],
+                                                                  ]],]]];
+    
 }
 
 
@@ -389,6 +462,26 @@
             case 9:
                 // make a fireflies trail
                 [self myMakeFirefliesTrail: location];
+                break;
+            case 10:
+                // make a fireflies trail
+                [self myMakeEgretsTrail: location];
+                break;
+            case 11:
+                // make a Flag trail
+                [self myMakeFlagTrail: location];
+                break;
+            case 12:
+                // make a Firetruck trail
+                [self myMakeNodeTrail:myFiretruckNode : location];
+                break;
+            case 13:
+                // make an Ambulance trail
+                [self myMakeNodeTrail:myAmbulanceNode : location];
+                break;
+            case 14:
+                // make an Airplane trail
+                [self myMakeNodeTrail:myAirplaneNode : location];
                 break;
             default:
                 break;

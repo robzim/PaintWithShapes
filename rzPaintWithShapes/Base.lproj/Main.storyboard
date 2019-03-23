@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Cd6-nI-wj7" userLabel="Recording Stack View">
+                                <rect key="frame" x="149.5" y="34" width="725" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAt-ba-MYM">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="55"/>
+                                        <state key="normal" title="Take Picture"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myTakePictureButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="fAu-V0-Ilw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbX-3H-nUf">
+                                        <rect key="frame" x="386" y="0.0" width="73" height="55"/>
+                                        <state key="normal" title="Help"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="rmJ-k6-8mO" kind="presentation" id="cpD-IO-puF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufj-Lu-bDl">
+                                        <rect key="frame" x="659" y="0.0" width="66" height="55"/>
+                                        <state key="normal" title="Quit"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myQuitButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gCL-Z1-aTC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="200"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="8888" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Screen to Select Shape to Paint With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-Vp-5aX">
+                                <rect key="frame" x="239.5" y="1305" width="545.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" tag="9999" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="45a-4h-OSe" userLabel="Shape Selection Stack View">
+                                <rect key="frame" x="475" y="120" width="74" height="1126"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpz-97-iiq" userLabel="Egret">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Mpz-97-iiq" secondAttribute="height" multiplier="25:25" id="r7J-dR-R5v"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="transparent-new-egret-1"/>
+                                        <connections>
+                                            <action selector="myEgretPressed:" destination="SZV-WD-TEh" eventType="touchUpInside" id="QPb-O2-6dS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-0Y-8mD" userLabel="Spirograph">
+                                        <rect key="frame" x="0.0" y="84" width="74" height="74.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pQT-0Y-8mD" secondAttribute="height" multiplier="25:25" id="hTa-Qj-edO"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="spirograph button.png"/>
+                                        <connections>
+                                            <action selector="mySpirographPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mck-84-O3b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcu-Nb-DmM" userLabel="Flag">
+                                        <rect key="frame" x="0.0" y="168.5" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vcu-Nb-DmM" secondAttribute="height" multiplier="25:25" id="mKa-bH-AmF"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="flag"/>
+                                        <connections>
+                                            <action selector="myFlagPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jos-8M-Ms9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvz-h6-2xI" userLabel="Firetruck">
+                                        <rect key="frame" x="0.0" y="252.5" width="74" height="74.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Zvz-h6-2xI" secondAttribute="height" multiplier="25:25" id="PjX-fM-llM"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="firetruck"/>
+                                        <connections>
+                                            <action selector="myFiretruckPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Ast-wT-tPC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPb-Jk-cQC" userLabel="Airplane">
+                                        <rect key="frame" x="0.0" y="337" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YPb-Jk-cQC" secondAttribute="height" multiplier="25:25" id="vff-fQ-j5k"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="airplane"/>
+                                        <connections>
+                                            <action selector="myAirplanePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="QB5-gT-yLk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD3-p2-gev" userLabel="Ambulance">
+                                        <rect key="frame" x="0.0" y="421" width="74" height="74.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZD3-p2-gev" secondAttribute="height" multiplier="25:25" id="fzu-SB-QGx"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="ambulance"/>
+                                        <connections>
+                                            <action selector="myAmbulancePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Mbr-ck-zxu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1o-DY-D7r" userLabel="Psychadelic Spiral">
+                                        <rect key="frame" x="0.0" y="505.5" width="74" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="A1o-DY-D7r" secondAttribute="height" multiplier="100:81" id="GFZ-7x-Hon"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="psychedelic spiral button.png"/>
+                                        <connections>
+                                            <action selector="mySpiralPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="qHd-00-MeZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVM-PP-cf5" userLabel="Alphabet">
+                                        <rect key="frame" x="0.0" y="575.5" width="74" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rVM-PP-cf5" secondAttribute="height" multiplier="50:33" id="yTf-yc-ec3"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="alphabet button.png"/>
+                                        <connections>
+                                            <action selector="myAlphabetPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iA9-DG-9nn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-zO-dlb" userLabel="Cake">
+                                        <rect key="frame" x="0.0" y="634.5" width="74" height="70.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5eX-zO-dlb" secondAttribute="height" multiplier="20:19" id="yaE-5d-CKt"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="cake button.png"/>
+                                        <connections>
+                                            <action selector="myCakePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TRN-EQ-fNI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY4-cH-R5y" userLabel="Balloon">
+                                        <rect key="frame" x="0.0" y="715" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OY4-cH-R5y" secondAttribute="height" multiplier="1:1" id="BgA-Iy-Xe8"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="balloons button.png"/>
+                                        <connections>
+                                            <action selector="myBalloonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sHo-V5-eZu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-aZ-5Zm" userLabel="Osprey">
+                                        <rect key="frame" x="0.0" y="799" width="74" height="74.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dpA-aZ-5Zm" secondAttribute="height" multiplier="1:1" id="oSz-dB-LyS"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="osprey button.png"/>
+                                        <connections>
+                                            <action selector="myOspreyPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="pSS-Wy-oy3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v73-fp-dZh" userLabel="Firey">
+                                        <rect key="frame" x="0.0" y="883.5" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="v73-fp-dZh" secondAttribute="height" multiplier="1:1" id="3Uo-1c-tPh"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="firey button.png"/>
+                                        <connections>
+                                            <action selector="myFireyPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="xqH-9N-V02"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xX-V8-PGd" userLabel="RandomFirey">
+                                        <rect key="frame" x="0.0" y="967.5" width="74" height="74.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1xX-V8-PGd" secondAttribute="height" multiplier="1:1" id="tVt-i3-nmg"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="RandomFireyButton.png"/>
+                                        <connections>
+                                            <action selector="myRandomFireyPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="rGG-qq-jyD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-mK-Xdq" userLabel="Fireflies">
+                                        <rect key="frame" x="0.0" y="1052" width="74" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="B8j-mK-Xdq" secondAttribute="height" multiplier="1:1" id="NAR-DX-fNT"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="fireflies button.png"/>
+                                        <connections>
+                                            <action selector="myFirefliesPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0YX-GR-sez"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZD3-p2-gev" firstAttribute="width" secondItem="ZD3-p2-gev" secondAttribute="height" multiplier="25:25" id="2eM-L8-NKa"/>
+                                    <constraint firstItem="ZD3-p2-gev" firstAttribute="width" secondItem="ZD3-p2-gev" secondAttribute="height" multiplier="25:25" id="2hm-PX-rgW"/>
+                                    <constraint firstItem="Zvz-h6-2xI" firstAttribute="width" secondItem="Zvz-h6-2xI" secondAttribute="height" multiplier="25:25" id="4j2-jF-jhf"/>
+                                    <constraint firstItem="ZD3-p2-gev" firstAttribute="width" secondItem="ZD3-p2-gev" secondAttribute="height" multiplier="25:25" id="Ai2-kJ-o29"/>
+                                    <constraint firstItem="YPb-Jk-cQC" firstAttribute="width" secondItem="YPb-Jk-cQC" secondAttribute="height" multiplier="25:25" id="VjQ-o7-nJL"/>
+                                    <constraint firstItem="ZD3-p2-gev" firstAttribute="width" secondItem="ZD3-p2-gev" secondAttribute="height" multiplier="25:25" id="d6s-PO-6du"/>
+                                    <constraint firstItem="YPb-Jk-cQC" firstAttribute="width" secondItem="YPb-Jk-cQC" secondAttribute="height" multiplier="25:25" id="e3F-Bv-t4a"/>
+                                    <constraint firstItem="vcu-Nb-DmM" firstAttribute="width" secondItem="vcu-Nb-DmM" secondAttribute="height" multiplier="25:25" id="gxq-CS-aix"/>
+                                    <constraint firstItem="vcu-Nb-DmM" firstAttribute="width" secondItem="vcu-Nb-DmM" secondAttribute="height" multiplier="25:25" id="kL0-zl-54p"/>
+                                    <constraint firstItem="YPb-Jk-cQC" firstAttribute="width" secondItem="YPb-Jk-cQC" secondAttribute="height" multiplier="25:25" id="nUM-BE-tUO"/>
+                                    <constraint firstItem="Zvz-h6-2xI" firstAttribute="width" secondItem="Zvz-h6-2xI" secondAttribute="height" multiplier="25:25" id="tFQ-BI-9lD"/>
+                                    <constraint firstItem="YPb-Jk-cQC" firstAttribute="width" secondItem="YPb-Jk-cQC" secondAttribute="height" multiplier="25:25" id="tSP-Jb-fNg"/>
+                                    <constraint firstItem="ZD3-p2-gev" firstAttribute="width" secondItem="ZD3-p2-gev" secondAttribute="height" multiplier="25:25" id="wSz-JT-0MX"/>
+                                    <constraint firstItem="Zvz-h6-2xI" firstAttribute="width" secondItem="Zvz-h6-2xI" secondAttribute="height" multiplier="25:25" id="xEE-Ii-ZDK"/>
+                                    <constraint firstItem="pQT-0Y-8mD" firstAttribute="width" secondItem="pQT-0Y-8mD" secondAttribute="height" multiplier="25:25" id="z9g-Mw-ZGh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dYq-Vp-5aX" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="9Qn-ac-rHb"/>
+                            <constraint firstItem="Cd6-nI-wj7" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="HLO-1v-5xw"/>
+                            <constraint firstItem="Cd6-nI-wj7" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" id="OH6-zo-vf4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="dYq-Vp-5aX" secondAttribute="bottom" constant="5" id="RPR-0B-5wb"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="45a-4h-OSe" secondAttribute="bottom" constant="50" id="bc9-Zd-wqf"/>
+                            <constraint firstItem="45a-4h-OSe" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="dFp-Td-YbI"/>
+                            <constraint firstItem="45a-4h-OSe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3se-qz-xqx" secondAttribute="top" constant="80" id="f2C-VH-p5W">
+                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="45a-4h-OSe" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="gtG-0J-Ten"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myQuitButton" destination="Ufj-Lu-bDl" id="OiQ-T2-ZPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-188" y="-56"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Rm-B0-EEj">
+            <objects>
+                <viewController id="rmJ-k6-8mO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ONf-aY-UmO"/>
+                        <viewControllerLayoutGuide type="bottom" id="6DC-bF-RYp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V7S-It-0mj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pln-u7-yqZ">
+                                <rect key="frame" x="483" y="10" width="58" height="63"/>
+                                <state key="normal" title="OK"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="uds-xd-2mH" kind="unwind" unwindAction="unwindToThisViewController:" id="kCW-PY-Mdq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPW-qa-d3Z">
+                                <rect key="frame" x="40" y="44" width="944" height="1282"/>
+                                <string key="text">Paint with Shapes!  Tap to Bring up a menu of shape choices.  Then tap on the shape that you want to draw with.  Then Draw!  Have fun and watch the beautiful shapes moving.  If you like, press the Take Photo button and a picture of your creation will be added to your Photo album for you to share!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UPW-qa-d3Z" firstAttribute="leading" secondItem="V7S-It-0mj" secondAttribute="leadingMargin" constant="20" id="3ao-7I-BM7"/>
+                            <constraint firstItem="pln-u7-yqZ" firstAttribute="centerX" secondItem="V7S-It-0mj" secondAttribute="centerX" id="8dA-gD-J5a"/>
+                            <constraint firstItem="6DC-bF-RYp" firstAttribute="top" secondItem="UPW-qa-d3Z" secondAttribute="bottom" constant="20" id="Prk-oQ-8mu"/>
+                            <constraint firstItem="pln-u7-yqZ" firstAttribute="top" secondItem="V7S-It-0mj" secondAttribute="top" constant="10" id="eIj-yu-072"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UPW-qa-d3Z" secondAttribute="trailing" constant="20" id="env-gY-vJz"/>
+                            <constraint firstItem="UPW-qa-d3Z" firstAttribute="top" relation="lessThanOrEqual" secondItem="ONf-aY-UmO" secondAttribute="bottom" constant="20" id="unv-R6-DeC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQ4-ym-qv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uds-xd-2mH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="472.65625" y="-56.249999999999993"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RandomFireyButton.png" width="200" height="200"/>
+        <image name="airplane" width="153.60000610351562" height="115.19999694824219"/>
+        <image name="alphabet button.png" width="100" height="66"/>
+        <image name="ambulance" width="153.60000610351562" height="115.91999816894531"/>
+        <image name="balloons button.png" width="100" height="100"/>
+        <image name="cake button.png" width="100" height="95"/>
+        <image name="fireflies button.png" width="100" height="100"/>
+        <image name="firetruck" width="320" height="160"/>
+        <image name="firey button.png" width="100" height="100"/>
+        <image name="flag" width="131.65715026855469" height="87.634284973144531"/>
+        <image name="osprey button.png" width="70" height="100"/>
+        <image name="psychedelic spiral button.png" width="100" height="81"/>
+        <image name="spirograph button.png" width="100" height="100"/>
+        <image name="transparent-new-egret-1" width="108.61714172363281" height="83.108573913574219"/>
+    </resources>
+</document>

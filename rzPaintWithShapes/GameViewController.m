@@ -16,21 +16,49 @@
 
 @implementation GameViewController
 
-
 //@synthesize myReplayPreviewController;
 //@synthesize myReplayScreenRecorder;
 @synthesize myRecordButton;
 @synthesize myStopButton;
 @synthesize myRecordingIndicator;
+@synthesize myImageSelector;
 //@synthesize myPreviewViewController;
 GameScene *myScene2;
 SKView *myView2;
+
+@synthesize myCrdLabels;
+
+- (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue
+{
+    NSLog(@"unwound to here");
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    return cell;
+}
+
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return myCrdLabels.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Path is %ld",(long)indexPath.row);
+}
 
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    myCrdLabels = @[@"one", @"two",  @"three", @"four"];
+//    NSDictionary *myLabels = [[NSDictionary alloc] initWithObjects:myCrdLabels forKeys:NULL count:myCrdLabels.count];
+//    UITableViewController *myImageSelector = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+//    [myImageSelector setTitle:@"selector"];
+//    [myImageSelector setValuesForKeysWithDictionary:myLabels];
     
     // hide the recording indicator and the stop button, we're not recording yet
     
@@ -53,24 +81,32 @@ SKView *myView2;
     myView2 = scene.view;
     myScene2 = scene;
 }
+-(IBAction)myEgretPressed:(UIButton *)sender{
+    myScene2.myShapeType = 1;
+    myScene2.myShapeNumber = [NSNumber numberWithInt:10];
+    [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myEgretNode];
+};
 
 
 -(IBAction)mySpirographPressed:(UIButton *)sender{
     myScene2.myShapeType = 1;
     myScene2.myShapeNumber = [NSNumber numberWithInt:1];
     [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.mySpirographNode];
 };
 - (IBAction)mySpiralPressed:(UIButton *)sender{
     myScene2.myShapeType = 2;
     myScene2.myShapeNumber = [NSNumber numberWithInt:2];
     [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.mySpiralShapeNode];
 };
 
 - (IBAction)myAlphabetPressed:(UIButton *)sender{
     myScene2.myShapeType = 3;
     myScene2.myShapeNumber = [NSNumber numberWithInt:3];
-
     [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myAlphabetNode];
 };
 
 
@@ -78,6 +114,7 @@ SKView *myView2;
     myScene2.myShapeType = 4;
     myScene2.myShapeNumber = [NSNumber numberWithInt:4];
     [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myCakeNode];
     };
 
 
@@ -85,25 +122,26 @@ SKView *myView2;
     myScene2.myShapeType = 5;
     myScene2.myShapeNumber = [NSNumber numberWithInt:5];
     [[self.view viewWithTag:9999] setHidden:YES];
-
+    [myScene2 myMakeShapeIndicator:myScene2.myBaloonNode];
 };
 
 - (IBAction)myOspreyPressed:(UIButton *)sender{
     myScene2.myShapeType = 6;
     myScene2.myShapeNumber = [NSNumber numberWithInt:6];
     [[self.view viewWithTag:9999] setHidden:YES];
-    
+    [myScene2 myMakeShapeIndicator:myScene2.myOspreyNode];
 };
 - (IBAction)myFireyPressed:(UIButton *)sender{
     myScene2.myShapeType = 7;
     myScene2.myShapeNumber = [NSNumber numberWithInt:7];
     [[self.view viewWithTag:9999] setHidden:YES];
-    
+    [myScene2 myMakeShapeIndicator:myScene2.myFireyParticle];
 };
 - (IBAction)myRandomFireyPressed:(UIButton *)sender {
     myScene2.myShapeType = 8;
     myScene2.myShapeNumber = [NSNumber numberWithInt:8];
     [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myRandomFireyParticle];
 }
 
 - (IBAction)myQuitButtonPressed:(UIButton *)sender {
@@ -114,10 +152,38 @@ SKView *myView2;
     myScene2.myShapeType = 9;
     myScene2.myShapeNumber = [NSNumber numberWithInt:9];
     [[self.view viewWithTag:9999] setHidden:YES];
-    
+    [myScene2 myMakeShapeIndicator:myScene2.myFirefliesParticle];
+};
+
+- (IBAction)myFlagPressed:(UIButton *)sender{
+    myScene2.myShapeType = 11;
+    myScene2.myShapeNumber = [NSNumber numberWithInt:11];
+    [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myFlagNode];
 };
 
 
+- (IBAction)myFiretruckPressed:(UIButton *)sender{
+    myScene2.myShapeType = 12;
+    myScene2.myShapeNumber = [NSNumber numberWithInt:myScene2.myShapeType];
+    [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myFiretruckNode];
+};
+
+
+- (IBAction)myAmbulancePressed:(UIButton *)sender{
+    myScene2.myShapeType = 13;
+    myScene2.myShapeNumber = [NSNumber numberWithInt:myScene2.myShapeType];
+    [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myAmbulanceNode];
+};
+
+- (IBAction)myAirplanePressed:(UIButton *)sender{
+    myScene2.myShapeType = 14;
+    myScene2.myShapeNumber = [NSNumber numberWithInt:myScene2.myShapeType];
+    [[self.view viewWithTag:9999] setHidden:YES];
+    [myScene2 myMakeShapeIndicator:myScene2.myAirplaneNode];
+};
 
 
 

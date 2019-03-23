@@ -10,8 +10,11 @@
 #import <SpriteKit/SpriteKit.h>
 //#import <ReplayKit/ReplayKit.h>
 
+
 //@interface GameViewController : UIViewController<RPPreviewViewControllerDelegate, RPScreenRecorderDelegate>
 @interface GameViewController : UIViewController
+@property NSArray *myCrdLabels;
+@property UITableViewController *myImageSelector;
 - (IBAction)myTakePictureButtonPressed:(UIButton *)sender;
 //@property RPScreenRecorder *myReplayScreenRecorder;
 //@property RPPreviewViewController *myReplayPreviewController;
@@ -23,6 +26,7 @@
 
 
 //@property RPPreviewViewController *myPreviewViewController;
+- (IBAction)myEgretPressed:(UIButton *)sender;
 
 - (IBAction)mySpirographPressed:(UIButton *)sender;
 - (IBAction)mySpiralPressed:(UIButton *)sender;

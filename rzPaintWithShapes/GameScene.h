@@ -11,7 +11,7 @@
 #import <GamePlayKit/GamePlayKit.h>
 
 @interface GameScene : SKScene<UIGestureRecognizerDelegate>
--(void)myMakeShapeIndicator: (SKNode *) theNode;
+-(void)myMakeShapeIndicator: (SKNode *) theNode : (NSString*) theAudioFileName;
 @property SKShapeNode *mySquareShape;
 //@property SKSpriteNode *myImageSprite;
 @property int myShapeType;
@@ -27,6 +27,17 @@
 @property SKNode *myAirplaneNode;
 @property SKNode *myAmbulanceNode;
 @property SKNode *mySpirographNode;
+
+
+@property SKNode *myBulldozerNode;
+@property SKNode *myCementMixerNode;
+@property SKNode *mySubmarineNode;
+@property SKNode *myTowtruckNode;
+@property SKNode *myHelicopterNode;
+@property SKNode *myPoliceCarNode;
+
+
+
 @property SKEmitterNode *myFirefliesParticle;
 @property SKEmitterNode *myFireyParticle;
 @property SKEmitterNode *myRandomFireyParticle;

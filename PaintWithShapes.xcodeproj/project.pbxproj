@@ -9,7 +9,31 @@
 /* Begin PBXBuildFile section */
 		58005EFA2245B3B600EF1E5F /* new-firetruck.png in Resources */ = {isa = PBXBuildFile; fileRef = 58005EF92245B3B600EF1E5F /* new-firetruck.png */; };
 		588DB6A822466E530025088B /* spirograph.png in Resources */ = {isa = PBXBuildFile; fileRef = 588DB6A722466E530025088B /* spirograph.png */; };
+		589C98272247C26C0096B064 /* Airplane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98242247C26B0096B064 /* Airplane.mp3 */; };
+		589C98282247C26C0096B064 /* Ambulance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98252247C26C0096B064 /* Ambulance.mp3 */; };
+		589C98292247C26C0096B064 /* Firetruck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98262247C26C0096B064 /* Firetruck.mp3 */; };
+		589C982B2247C47F0096B064 /* Egret.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C982A2247C47F0096B064 /* Egret.mp3 */; };
+		589C98342247C70C0096B064 /* Flag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C982C2247C70B0096B064 /* Flag.mp3 */; };
+		589C98352247C70C0096B064 /* Sparkles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C982D2247C70B0096B064 /* Sparkles.mp3 */; };
+		589C98362247C70C0096B064 /* Spiral.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C982E2247C70C0096B064 /* Spiral.mp3 */; };
+		589C98372247C70C0096B064 /* Cake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C982F2247C70C0096B064 /* Cake.mp3 */; };
+		589C98382247C70C0096B064 /* Osprey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98302247C70C0096B064 /* Osprey.mp3 */; };
+		589C98392247C70C0096B064 /* Balloons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98312247C70C0096B064 /* Balloons.mp3 */; };
+		589C983A2247C70C0096B064 /* Spirograph.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98322247C70C0096B064 /* Spirograph.mp3 */; };
+		589C983B2247C70C0096B064 /* Alphabet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 589C98332247C70C0096B064 /* Alphabet.mp3 */; };
+		589C9842224959ED0096B064 /* Cement Mixer.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C983C224959EC0096B064 /* Cement Mixer.png */; };
+		589C9843224959ED0096B064 /* Bulldozer.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C983D224959EC0096B064 /* Bulldozer.png */; };
+		589C9845224959ED0096B064 /* Submarine.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C983F224959EC0096B064 /* Submarine.png */; };
+		589C9846224959ED0096B064 /* Towtruck.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C9840224959ED0096B064 /* Towtruck.png */; };
+		589C9847224959ED0096B064 /* Police Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C9841224959ED0096B064 /* Police Car.png */; };
 		589E8DCD21639012004D6192 /* myImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E8DCC21639012004D6192 /* myImageSelector.swift */; };
+		58BD2F022249838900CA9348 /* heli.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F012249838900CA9348 /* heli.png */; };
+		58BD2F092249AE6F00CA9348 /* Helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F032249AE6E00CA9348 /* Helicopter.mp3 */; };
+		58BD2F0A2249AE6F00CA9348 /* Bulldozer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F042249AE6E00CA9348 /* Bulldozer.mp3 */; };
+		58BD2F0B2249AE6F00CA9348 /* Cement Mixer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F052249AE6E00CA9348 /* Cement Mixer.mp3 */; };
+		58BD2F0C2249AE6F00CA9348 /* Police Car.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F062249AE6E00CA9348 /* Police Car.mp3 */; };
+		58BD2F0D2249AE6F00CA9348 /* Submarine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F072249AE6E00CA9348 /* Submarine.mp3 */; };
+		58BD2F0E2249AE6F00CA9348 /* Towtruck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F082249AE6F00CA9348 /* Towtruck.mp3 */; };
 		7CB6FE251C1B662700FC16A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE241C1B662700FC16A9 /* main.m */; };
 		7CB6FE281C1B662700FC16A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE271C1B662700FC16A9 /* AppDelegate.m */; };
 		7CB6FE2B1C1B662700FC16A9 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6FE2A1C1B662700FC16A9 /* GameScene.m */; };
@@ -41,8 +65,32 @@
 /* Begin PBXFileReference section */
 		58005EF92245B3B600EF1E5F /* new-firetruck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new-firetruck.png"; sourceTree = "<group>"; };
 		588DB6A722466E530025088B /* spirograph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spirograph.png; sourceTree = "<group>"; };
+		589C98242247C26B0096B064 /* Airplane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Airplane.mp3; sourceTree = "<group>"; };
+		589C98252247C26C0096B064 /* Ambulance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ambulance.mp3; sourceTree = "<group>"; };
+		589C98262247C26C0096B064 /* Firetruck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Firetruck.mp3; sourceTree = "<group>"; };
+		589C982A2247C47F0096B064 /* Egret.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Egret.mp3; sourceTree = "<group>"; };
+		589C982C2247C70B0096B064 /* Flag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flag.mp3; sourceTree = "<group>"; };
+		589C982D2247C70B0096B064 /* Sparkles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sparkles.mp3; sourceTree = "<group>"; };
+		589C982E2247C70C0096B064 /* Spiral.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spiral.mp3; sourceTree = "<group>"; };
+		589C982F2247C70C0096B064 /* Cake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cake.mp3; sourceTree = "<group>"; };
+		589C98302247C70C0096B064 /* Osprey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Osprey.mp3; sourceTree = "<group>"; };
+		589C98312247C70C0096B064 /* Balloons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Balloons.mp3; sourceTree = "<group>"; };
+		589C98322247C70C0096B064 /* Spirograph.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spirograph.mp3; sourceTree = "<group>"; };
+		589C98332247C70C0096B064 /* Alphabet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Alphabet.mp3; sourceTree = "<group>"; };
+		589C983C224959EC0096B064 /* Cement Mixer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cement Mixer.png"; sourceTree = "<group>"; };
+		589C983D224959EC0096B064 /* Bulldozer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bulldozer.png; sourceTree = "<group>"; };
+		589C983F224959EC0096B064 /* Submarine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submarine.png; sourceTree = "<group>"; };
+		589C9840224959ED0096B064 /* Towtruck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Towtruck.png; sourceTree = "<group>"; };
+		589C9841224959ED0096B064 /* Police Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Police Car.png"; sourceTree = "<group>"; };
 		589E8DCB21639012004D6192 /* rzSpriteKaleidoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rzSpriteKaleidoscope-Bridging-Header.h"; sourceTree = "<group>"; };
 		589E8DCC21639012004D6192 /* myImageSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myImageSelector.swift; sourceTree = "<group>"; };
+		58BD2F012249838900CA9348 /* heli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heli.png; sourceTree = "<group>"; };
+		58BD2F032249AE6E00CA9348 /* Helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Helicopter.mp3; sourceTree = "<group>"; };
+		58BD2F042249AE6E00CA9348 /* Bulldozer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bulldozer.mp3; sourceTree = "<group>"; };
+		58BD2F052249AE6E00CA9348 /* Cement Mixer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cement Mixer.mp3"; sourceTree = "<group>"; };
+		58BD2F062249AE6E00CA9348 /* Police Car.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Police Car.mp3"; sourceTree = "<group>"; };
+		58BD2F072249AE6E00CA9348 /* Submarine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Submarine.mp3; sourceTree = "<group>"; };
+		58BD2F082249AE6F00CA9348 /* Towtruck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Towtruck.mp3; sourceTree = "<group>"; };
 		7CB6FE201C1B662700FC16A9 /* PaintWithShapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintWithShapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB6FE241C1B662700FC16A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CB6FE261C1B662700FC16A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +176,30 @@
 		7CB6FE231C1B662700FC16A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58BD2F042249AE6E00CA9348 /* Bulldozer.mp3 */,
+				58BD2F052249AE6E00CA9348 /* Cement Mixer.mp3 */,
+				58BD2F032249AE6E00CA9348 /* Helicopter.mp3 */,
+				58BD2F062249AE6E00CA9348 /* Police Car.mp3 */,
+				58BD2F072249AE6E00CA9348 /* Submarine.mp3 */,
+				58BD2F082249AE6F00CA9348 /* Towtruck.mp3 */,
+				58BD2F012249838900CA9348 /* heli.png */,
+				589C983D224959EC0096B064 /* Bulldozer.png */,
+				589C983C224959EC0096B064 /* Cement Mixer.png */,
+				589C9841224959ED0096B064 /* Police Car.png */,
+				589C983F224959EC0096B064 /* Submarine.png */,
+				589C9840224959ED0096B064 /* Towtruck.png */,
+				589C98332247C70C0096B064 /* Alphabet.mp3 */,
+				589C98312247C70C0096B064 /* Balloons.mp3 */,
+				589C982F2247C70C0096B064 /* Cake.mp3 */,
+				589C982C2247C70B0096B064 /* Flag.mp3 */,
+				589C98302247C70C0096B064 /* Osprey.mp3 */,
+				589C982D2247C70B0096B064 /* Sparkles.mp3 */,
+				589C982E2247C70C0096B064 /* Spiral.mp3 */,
+				589C98322247C70C0096B064 /* Spirograph.mp3 */,
+				589C982A2247C47F0096B064 /* Egret.mp3 */,
+				589C98242247C26B0096B064 /* Airplane.mp3 */,
+				589C98252247C26C0096B064 /* Ambulance.mp3 */,
+				589C98262247C26C0096B064 /* Firetruck.mp3 */,
 				588DB6A722466E530025088B /* spirograph.png */,
 				58005EF92245B3B600EF1E5F /* new-firetruck.png */,
 				7CFAE1CA1D940DE00063FD3A /* alphabet button.png */,
@@ -178,19 +250,19 @@
 		7CB6FE181C1B662700FC16A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Robert Zimmelman";
 				TargetAttributes = {
 					7CB6FE1F1C1B662700FC16A9 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8RV36K5JJ4;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
 			buildConfigurationList = 7CB6FE1B1C1B662700FC16A9 /* Build configuration list for PBXProject "PaintWithShapes" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -211,30 +283,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589C98342247C70C0096B064 /* Flag.mp3 in Resources */,
 				588DB6A822466E530025088B /* spirograph.png in Resources */,
+				58BD2F0A2249AE6F00CA9348 /* Bulldozer.mp3 in Resources */,
+				58BD2F0B2249AE6F00CA9348 /* Cement Mixer.mp3 in Resources */,
 				7CB6FE2D1C1B662700FC16A9 /* GameScene.sks in Resources */,
+				589C983B2247C70C0096B064 /* Alphabet.mp3 in Resources */,
 				7CFAE1BB1D93320E0063FD3A /* transparent-new-osprey.png in Resources */,
+				589C98282247C26C0096B064 /* Ambulance.mp3 in Resources */,
 				7CFAE1C01D940CA80063FD3A /* firey button.png in Resources */,
 				7CFAE1B91D92AADA0063FD3A /* spark.png in Resources */,
 				7CFAE1B11D91EA8C0063FD3A /* balloons.png in Resources */,
 				58005EFA2245B3B600EF1E5F /* new-firetruck.png in Resources */,
 				7CB6FE381C1B662700FC16A9 /* LaunchScreen.storyboard in Resources */,
+				58BD2F0E2249AE6F00CA9348 /* Towtruck.mp3 in Resources */,
 				7CFAE1BF1D940CA80063FD3A /* fireflies button.png in Resources */,
 				7CFAE1C61D940CCE0063FD3A /* cake button.png in Resources */,
 				7CDB83A81D9DC21700A8026A /* RandomFireyButton.png in Resources */,
 				7CDB83A61D9D35E000A8026A /* myMagicParticle.sks in Resources */,
 				7CFAE1C11D940CA80063FD3A /* spirograph button.png in Resources */,
+				58BD2F0C2249AE6F00CA9348 /* Police Car.mp3 in Resources */,
+				589C98362247C70C0096B064 /* Spiral.mp3 in Resources */,
+				589C9846224959ED0096B064 /* Towtruck.png in Resources */,
 				7CFAE1B51D9218810063FD3A /* myFirefliesParticle.sks in Resources */,
+				58BD2F092249AE6F00CA9348 /* Helicopter.mp3 in Resources */,
+				589C98382247C70C0096B064 /* Osprey.mp3 in Resources */,
 				7CFAE1AF1D91E8410063FD3A /* tiered-cake-fondant-roses-top-view.png in Resources */,
 				7CB6FE351C1B662700FC16A9 /* Assets.xcassets in Resources */,
+				589C983A2247C70C0096B064 /* Spirograph.mp3 in Resources */,
 				7CFAE1B71D9218E20063FD3A /* myFireyParticle.sks in Resources */,
+				589C98352247C70C0096B064 /* Sparkles.mp3 in Resources */,
+				589C9847224959ED0096B064 /* Police Car.png in Resources */,
+				589C982B2247C47F0096B064 /* Egret.mp3 in Resources */,
+				589C9843224959ED0096B064 /* Bulldozer.png in Resources */,
 				7CFAE1C51D940CCE0063FD3A /* balloons button.png in Resources */,
 				7CFAE1C71D940CCE0063FD3A /* osprey button.png in Resources */,
+				589C98272247C26C0096B064 /* Airplane.mp3 in Resources */,
+				589C9845224959ED0096B064 /* Submarine.png in Resources */,
 				7CB6FE331C1B662700FC16A9 /* Main.storyboard in Resources */,
+				589C98372247C70C0096B064 /* Cake.mp3 in Resources */,
 				7CFAE1AD1D915F340063FD3A /* alphabet.png in Resources */,
 				7CFAE1AB1D9158160063FD3A /* 200px-psychedelic-spiral-background.png in Resources */,
+				58BD2F0D2249AE6F00CA9348 /* Submarine.mp3 in Resources */,
 				7CFAE1C91D940D700063FD3A /* psychedelic spiral button.png in Resources */,
+				589C98392247C70C0096B064 /* Balloons.mp3 in Resources */,
 				7CFAE1CB1D940DE00063FD3A /* alphabet button.png in Resources */,
+				589C9842224959ED0096B064 /* Cement Mixer.png in Resources */,
+				589C98292247C26C0096B064 /* Firetruck.mp3 in Resources */,
+				58BD2F022249838900CA9348 /* heli.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -333,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -391,7 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "rzSpriteKaleidoscope-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -407,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.zimmelman.paintwithshapes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "rzSpriteKaleidoscope-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

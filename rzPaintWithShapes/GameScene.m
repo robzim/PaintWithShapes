@@ -22,6 +22,14 @@
 @synthesize myViewControllerSaysWeAreRecording;
 
 
+@synthesize myBulldozerNode;
+@synthesize myCementMixerNode;
+@synthesize mySubmarineNode;
+@synthesize myTowtruckNode;
+@synthesize myHelicopterNode;
+@synthesize myPoliceCarNode;
+
+
 -(void)willMoveFromView:(SKView *)view{
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:@"takepicture"
@@ -72,6 +80,14 @@
     myAirplaneNode = [self childNodeWithName:@"myAirplane"];
     myAmbulanceNode = [self childNodeWithName:@"myAmbulance"];
     mySpirographNode = [self childNodeWithName:@"mySpirograph"];
+
+    myBulldozerNode = [self childNodeWithName:@"myBulldozer"];
+    myCementMixerNode = [self childNodeWithName:@"myCementMixer"];
+    mySubmarineNode = [self childNodeWithName:@"mySubmarine"];
+    myTowtruckNode = [self childNodeWithName:@"myTowTruck"];
+    myHelicopterNode = [self childNodeWithName:@"myHelicopter"];
+    myPoliceCarNode = [self childNodeWithName:@"myPoliceCar"];
+
     myShapeSelectionStackView = [self.view viewWithTag:9999];
     myInstructionsLabel = [self.view viewWithTag:8888];
     [myShapeSelectionStackView setHidden:YES];
@@ -262,14 +278,29 @@
     //                                                ]]];
 }
 
--(void)myMakeShapeIndicator: (SKNode *) theNode {
+-(void)myMakeShapeIndicator: (SKNode *) theNode : (NSString *) theAudioFileName {
     SKNode *myIndicatorNode = [theNode copy];
     double myMidX = self.scene.size.width / 2.0;
     double myMidY = self.scene.size.height / 2.0;
     [myIndicatorNode setPosition:CGPointMake(myMidX, myMidY)];
+    [myIndicatorNode setZPosition:150.0];
     [self addChild:myIndicatorNode];
+    [self runAction:[SKAction playSoundFileNamed:theAudioFileName waitForCompletion:false]];
     [myIndicatorNode runAction:[SKAction sequence:@[
                                                     [SKAction waitForDuration:1.0],
+                                                    [SKAction repeatAction:[SKAction sequence:@[
+                                                                                                [SKAction moveByX:10.0 y:0.0 duration:0.25],
+                                                                                                [SKAction moveByX:0.0 y:-10.0 duration:0.25],
+                                                                                                [SKAction moveByX:-10.0 y:0.0 duration:0.25],
+                                                                                                [SKAction moveByX:0.0 y:10.0 duration:0.25],
+                                                                                                ]] count:3.0],
+                                                    [SKAction customActionWithDuration:0.0 actionBlock:^(SKNode * _Nonnull node, CGFloat elapsedTime) {
+        [myIndicatorNode setZPosition:50.0];
+    }],
+                                                    [SKAction moveByX:10.0 y:0.0 duration:0.25],
+                                                    [SKAction moveByX:0.0 y:-10.0 duration:0.25],
+                                                    [SKAction moveByX:-10.0 y:0.0 duration:0.25],
+                                                    [SKAction moveByX:0.0 y:10.0 duration:0.25],
                                                     [SKAction scaleTo:0.1 duration:1.0],
                                                     [SKAction waitForDuration:0.1],
                                                     [SKAction removeFromParent],
@@ -284,6 +315,7 @@
     float myRandomScale = arc4random()%3;
     myRandomScale = myRandomScale / 10.0;
     [myTrailNode setScale:myRandomScale];
+    [myTrailNode setZPosition:101.0];
     [self addChild:myTrailNode];
     [myTrailNode runAction:[SKAction group:@[
                                              [SKAction rotateByAngle:M_PI*-1.0 duration:11.0],
@@ -383,7 +415,7 @@
     SKNode *myTrailNode = [myFlagNode copy];
     [myTrailNode setPosition:atLocation];
     float myRandomScale = arc4random()%3;
-    myRandomScale = myRandomScale / 10.0;
+    myRandomScale = myRandomScale / 3.0;
     [myTrailNode setScale:myRandomScale];
     [self addChild:myTrailNode];
     [myTrailNode runAction:[SKAction group:@[
@@ -476,12 +508,28 @@
                 [self myMakeNodeTrail:myFiretruckNode : location];
                 break;
             case 13:
-                // make an Ambulance trail
                 [self myMakeNodeTrail:myAmbulanceNode : location];
                 break;
             case 14:
-                // make an Airplane trail
                 [self myMakeNodeTrail:myAirplaneNode : location];
+                break;
+            case 15:
+                [self myMakeNodeTrail:myTowtruckNode : location];
+                break;
+            case 16:
+                [self myMakeNodeTrail:mySubmarineNode : location];
+                break;
+            case 17:
+                [self myMakeNodeTrail:myHelicopterNode : location];
+                break;
+            case 18:
+                [self myMakeNodeTrail:myBulldozerNode : location];
+                break;
+            case 19:
+                [self myMakeNodeTrail:myCementMixerNode : location];
+                break;
+            case 20:
+                [self myMakeNodeTrail:myPoliceCarNode : location];
                 break;
             default:
                 break;

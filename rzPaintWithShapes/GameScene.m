@@ -13,6 +13,7 @@
 @synthesize myShapeType;
 @synthesize mySpiralShapeNode, myAlphabetNode, myCakeNode, myBaloonNode, myOspreyNode, myEgretNode, myFlagNode;
 @synthesize myAirplaneNode, myAmbulanceNode, myFiretruckNode, mySpirographNode;
+@synthesize myIndicatorNode;
 @synthesize myFireyParticle, myRandomFireyParticle, myFirefliesParticle, myMagicParticle;
 @synthesize myShapeSelectionStackView;
 @synthesize myShapeNumber;
@@ -279,7 +280,7 @@
 }
 
 -(void)myMakeShapeIndicator: (SKNode *) theNode : (NSString *) theAudioFileName {
-    SKNode *myIndicatorNode = [theNode copy];
+    myIndicatorNode = [theNode copy];
     double myMidX = self.scene.size.width / 2.0;
     double myMidY = self.scene.size.height / 2.0;
     [myIndicatorNode setPosition:CGPointMake(myMidX, myMidY)];
@@ -295,7 +296,7 @@
                                                                                                 [SKAction moveByX:0.0 y:10.0 duration:0.25],
                                                                                                 ]] count:3.0],
                                                     [SKAction customActionWithDuration:0.0 actionBlock:^(SKNode * _Nonnull node, CGFloat elapsedTime) {
-        [myIndicatorNode setZPosition:50.0];
+        [self->myIndicatorNode setZPosition:50.0];
     }],
                                                     [SKAction moveByX:10.0 y:0.0 duration:0.25],
                                                     [SKAction moveByX:0.0 y:-10.0 duration:0.25],
@@ -453,7 +454,11 @@
 
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    [super touchesMoved:touches withEvent:event];
+    [myIndicatorNode runAction:[SKAction sequence:@[
+                                                    [SKAction scaleTo:0.01 duration:0.2],
+                                                    [SKAction removeFromParent],
+                                                    ]]];
+    [myShapeSelectionStackView setHidden:true];
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         switch ([myShapeNumber integerValue]) {

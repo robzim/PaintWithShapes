@@ -27,7 +27,7 @@
 @property SKNode *myAirplaneNode;
 @property SKNode *myAmbulanceNode;
 @property SKNode *mySpirographNode;
-
+@property SKNode *myIndicatorNode;
 
 @property SKNode *myBulldozerNode;
 @property SKNode *myCementMixerNode;

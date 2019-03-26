@@ -254,10 +254,10 @@
                                     <segue destination="uds-xd-2mH" kind="unwind" unwindAction="unwindToThisViewController:" id="kCW-PY-Mdq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPW-qa-d3Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPW-qa-d3Z">
                                 <rect key="frame" x="40" y="64" width="334" height="778"/>
-                                <string key="text">Paint with Shapes!  Tap to Bring up a menu of shape choices.  Then tap on the shape that you want to draw with.  Then Draw!  Have fun and watch the beautiful shapes moving.  If you like, press the Take Photo button and a picture of your creation will be added to your Photo album for you to share!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Paint with Shapes!  Press to Bring up a menu of shape choices.  Then touch the shape that you want to draw with.  Then Draw!  Have fun and watch the beautiful shapes moving.  If you like, press the Take Picture button and a picture of your creation will be added to your Photo Album!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">

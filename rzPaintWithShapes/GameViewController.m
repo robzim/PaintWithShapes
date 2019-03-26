@@ -55,16 +55,6 @@ SKView *myView2;
     [super viewDidLoad];
     
     myCrdLabels = @[@"one", @"two",  @"three", @"four"];
-//    NSDictionary *myLabels = [[NSDictionary alloc] initWithObjects:myCrdLabels forKeys:NULL count:myCrdLabels.count];
-//    UITableViewController *myImageSelector = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
-//    [myImageSelector setTitle:@"selector"];
-//    [myImageSelector setValuesForKeysWithDictionary:myLabels];
-    
-    // hide the recording indicator and the stop button, we're not recording yet
-    
-//    [myRecordingIndicator setHidden:!myReplayScreenRecorder.isRecording];
-//    [myStopButton setHidden:!myReplayScreenRecorder.isRecording];
-
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     /* Sprite Kit applies additional optimizations to improve rendering performance */
@@ -81,6 +71,7 @@ SKView *myView2;
     myView2 = scene.view;
     myScene2 = scene;
 }
+
 -(IBAction)myEgretPressed:(UIButton *)sender{
     myScene2.myShapeType = 1;
     myScene2.myShapeNumber = [NSNumber numberWithInt:10];

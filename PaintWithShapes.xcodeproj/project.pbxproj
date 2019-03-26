@@ -26,7 +26,6 @@
 		589C9845224959ED0096B064 /* Submarine.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C983F224959EC0096B064 /* Submarine.png */; };
 		589C9846224959ED0096B064 /* Towtruck.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C9840224959ED0096B064 /* Towtruck.png */; };
 		589C9847224959ED0096B064 /* Police Car.png in Resources */ = {isa = PBXBuildFile; fileRef = 589C9841224959ED0096B064 /* Police Car.png */; };
-		589E8DCD21639012004D6192 /* myImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589E8DCC21639012004D6192 /* myImageSelector.swift */; };
 		58BD2F022249838900CA9348 /* heli.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F012249838900CA9348 /* heli.png */; };
 		58BD2F092249AE6F00CA9348 /* Helicopter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F032249AE6E00CA9348 /* Helicopter.mp3 */; };
 		58BD2F0A2249AE6F00CA9348 /* Bulldozer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 58BD2F042249AE6E00CA9348 /* Bulldozer.mp3 */; };
@@ -82,8 +81,6 @@
 		589C983F224959EC0096B064 /* Submarine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Submarine.png; sourceTree = "<group>"; };
 		589C9840224959ED0096B064 /* Towtruck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Towtruck.png; sourceTree = "<group>"; };
 		589C9841224959ED0096B064 /* Police Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Police Car.png"; sourceTree = "<group>"; };
-		589E8DCB21639012004D6192 /* rzSpriteKaleidoscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rzSpriteKaleidoscope-Bridging-Header.h"; sourceTree = "<group>"; };
-		589E8DCC21639012004D6192 /* myImageSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myImageSelector.swift; sourceTree = "<group>"; };
 		58BD2F012249838900CA9348 /* heli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heli.png; sourceTree = "<group>"; };
 		58BD2F032249AE6E00CA9348 /* Helicopter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Helicopter.mp3; sourceTree = "<group>"; };
 		58BD2F042249AE6E00CA9348 /* Bulldozer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bulldozer.mp3; sourceTree = "<group>"; };
@@ -138,10 +135,8 @@
 		7CB6FE171C1B662700FC16A9 = {
 			isa = PBXGroup;
 			children = (
-				589E8DCC21639012004D6192 /* myImageSelector.swift */,
 				7CB6FE221C1B662700FC16A9 /* rzPaintWithShapes */,
 				7CB6FE211C1B662700FC16A9 /* Products */,
-				589E8DCB21639012004D6192 /* rzSpriteKaleidoscope-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589E8DCD21639012004D6192 /* myImageSelector.swift in Sources */,
 				7CB6FE301C1B662700FC16A9 /* GameViewController.m in Sources */,
 				7CB6FE281C1B662700FC16A9 /* AppDelegate.m in Sources */,
 				7CB6FE2B1C1B662700FC16A9 /* GameScene.m in Sources */,

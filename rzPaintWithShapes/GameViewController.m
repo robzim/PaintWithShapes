@@ -1,6 +1,6 @@
 //
 //  GameViewController.m
-//  rzSpriteKaleidoscope
+//  rzPaintWithShapes
 //
 //  Created by Robert Zimmelman on 12/11/15.
 //  Copyright (c) 2015 Robert Zimmelman. All rights reserved.

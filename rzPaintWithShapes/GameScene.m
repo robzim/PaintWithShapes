@@ -1,6 +1,6 @@
 //
 //  GameScene.m
-//  rzSpriteKaleidoscope
+//  rzPaintWithShapes
 //
 //  Created by Robert Zimmelman on 12/11/15.
 //  Copyright (c) 2015 Robert Zimmelman. All rights reserved.
@@ -280,6 +280,10 @@
 }
 
 -(void)myMakeShapeIndicator: (SKNode *) theNode : (NSString *) theAudioFileName {
+    [self enumerateChildNodesWithName:@"my*" usingBlock:^(SKNode * _Nonnull node, BOOL * _Nonnull stop) {
+//        NSLog(@"Found a Node");
+        [node setZPosition:node.zPosition - 1.0];
+    }];
     myIndicatorNode = [theNode copy];
     double myMidX = self.scene.size.width / 2.0;
     double myMidY = self.scene.size.height / 2.0;
@@ -606,20 +610,10 @@
     [myTrailNode setParticleColorGreenSpeed:1.0];
     
     
-//    [myTrailNode setParticleColor:[UIColor colorWithRed:myRandomRed green:myRandomGreen blue:myRandomBlue alpha:1.0]];
     [myTrailNode setPosition:atLocation];
     [self addChild:myTrailNode];
 
     [myTrailNode runAction:[SKAction sequence:@[
-//                                                [SKAction waitForDuration:3.0],
-//                                                [SKAction colorizeWithColor:[UIColor colorWithRed:myRandomRed green:myRandomGreen blue:myRandomBlue alpha:1.0] colorBlendFactor:1.0 duration:3.0],
-//                                                [SKAction customActionWithDuration:1.0 actionBlock:^(SKNode * _Nonnull node, CGFloat elapsedTime) {
-//        [(SKEmitterNode *) node setParticleColor:[UIColor colorWithRed:1.0 green:1.0 blue:0.0 alpha:1.0]];
-//    }],
-//                                                [SKAction waitForDuration:3.0],
-//                                                [SKAction customActionWithDuration:1.0 actionBlock:^(SKNode * _Nonnull node, CGFloat elapsedTime) {
-//        [(SKEmitterNode *) node setParticleColor:[UIColor colorWithRed:myRandomRed green:myRandomGreen blue:myRandomBlue alpha:1.0]];
-//    }],
                                                 [SKAction waitForDuration:10.0],
                                                 [SKAction removeFromParent],
                                                 ]]];

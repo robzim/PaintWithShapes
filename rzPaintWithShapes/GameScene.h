@@ -1,6 +1,6 @@
 //
 //  GameScene.h
-//  rzSpriteKaleidoscope
+//  rzPaintWithShapes
 //
 
 //  Copyright (c) 2015 Robert Zimmelman. All rights reserved.

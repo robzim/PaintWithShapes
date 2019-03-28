@@ -1,6 +1,6 @@
 //
 //  main.m
-//  rzSpriteKaleidoscope
+//  rzPaintWithShapes
 //
 //  Created by Robert Zimmelman on 12/11/15.
 //  Copyright © 2015 Robert Zimmelman. All rights reserved.
